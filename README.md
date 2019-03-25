@@ -10,10 +10,10 @@ En particulier:
 Dans le dossierpySpriteWorld-forStudents se trouvent les fichiers :
 
 * Utils où est implémenté le a_search ainsi que le a_search_bis utilisé pour la 3e stratégie.
-* DiscreteWorldAStar-playerVersion qui est l'implémentation d'une partie avec 1 joueur
+* DiscreteWorldAStar-playerVersion qui est l'implémentation d'une partie avec un joueur
 * multi_1, multi_2, multi_3 qui sont les implémentations pour des parties avec plusieurs joueurs, utilisant respectivement les startégies 1,2,3 
 
 Dans le dossier Cartes ou nous avons ajouté les cartes suivantes : 
 
-* carte_1 et cart_2 pour les parties avec 1 seul joueurs
+* carte_1 et cart_2 pour les parties avec un seul joueur
 * carte_4 et carte_5 pour les parties avec plusieurs joueurs
