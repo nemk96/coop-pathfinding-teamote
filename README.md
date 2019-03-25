@@ -7,7 +7,7 @@ En particulier:
 * le sujet de TME de l'année courante et le code associé
 
 
-Dans le dossierpySpriteWorld-forStaudents se trouvent les fichiers :
+Dans le dossierpySpriteWorld-forStudents se trouvent les fichiers :
 
 * Utils où est implémenté le a_search ainsi que le a_search_bis utilisé pour la 3e stratégie.
 * DiscreteWorldAStar-playerVersion qui est l'implémentation d'une partie avec 1 joueur
