@@ -127,6 +127,7 @@ def main():
         game.mainiteration()
     print ("scores:", score)
     print('total score', max(score))
+    print('num_iter', num_iter)
     pygame.quit()
 
 

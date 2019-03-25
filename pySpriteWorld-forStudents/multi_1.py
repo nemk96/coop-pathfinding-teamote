@@ -41,7 +41,7 @@ def main():
 
     if len(sys.argv) == 2:
         iterations = int(sys.argv[1])
-    init('carte_5')
+    init('carte_4')
 
 
 
@@ -83,14 +83,17 @@ def main():
 
     paths = []
     walls = []
+    origs = []
     for j in range(nbPlayers):
         obstacles = wallStates + [goalStates[k] for k in range(nbPlayers) if k!=j ]
         walls.append(obstacles)
         path, a = a_search(initStates[j],goalStates[j], obstacles)
+        orig_path, _ = a_search(initStates[j],goalStates[j], wallStates)
+        origs.append(orig_path)
         num_iter += a
         paths.append(path)
     reached = nbPlayers * [False]
-    borne_inf = max(list(map(len, paths)))
+    borne_inf = max(list(map(len, origs)))
 
     actual_moves = [path[0] for path in paths]
     all_moves = [actual_moves]
@@ -164,6 +167,8 @@ def main():
         game.mainiteration()
     print ("scores:", score)
     print('total score', max(score))
+    print('borne_inf', borne_inf)
+    print('num_iter', num_iter)
     pygame.quit()
 
 
